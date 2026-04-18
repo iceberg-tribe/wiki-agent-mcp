@@ -4,7 +4,7 @@
 [![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-green?style=for-the-badge)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **The state-of-the-art "Premium Research Assistant" experience for the Model Context Protocol.**  
+> **The state-of-the-art "Premium Research Assistant" experience powered by the Model Context Protocol.**  
 > Transform raw curiosity into a structured, persistent knowledge base using a specialized multi-agent research lifecycle.
 
 [**🛠️ Tools Reference**](docs/tools.md) | [**🧠 Storage & Memory**](docs/storage.md) | [**🏗️ Architecture**](docs/architecture.md) | [**🧪 Testing Guide**](docs/testing.md)
