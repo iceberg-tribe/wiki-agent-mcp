@@ -20,7 +20,7 @@ Output format (JSON array):
         level2 = self._parse_json_response(response)
         
         if level2:
-            self.session.generated_level2[cache_key] = level2
+            self.session.save_level2(cache_key, level2)
             return level2
             
         # Fallback
@@ -30,5 +30,5 @@ Output format (JSON array):
             {"number": f"{section_number}.3", "title": "Practical Applications", "path": f"{topic} > {section_number} > {section_number}.3"},
             {"number": f"{section_number}.4", "title": "Common Challenges", "path": f"{topic} > {section_number} > {section_number}.4"},
         ]
-        self.session.generated_level2[cache_key] = fallback
+        self.session.save_level2(cache_key, fallback)
         return fallback

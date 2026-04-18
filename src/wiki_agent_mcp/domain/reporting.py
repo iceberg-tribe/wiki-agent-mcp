@@ -33,6 +33,43 @@ Output Markdown report."""
         self._generate_smart_recommendations(topic)
         return report
 
+    def suggest_next_steps(self, topic: str) -> str:
+        """Analyze unvisited nodes and recommend the best next paths."""
+        all_level1 = self.session.generated_level1.get(topic, [])
+        all_level2 = []
+        for key, l2list in self.session.generated_level2.items():
+            if key.startswith(f"{topic}:"): 
+                all_level2.extend(l2list)
+        
+        visited = set(self.session.visited_nodes)
+        unvisited = [item for item in all_level1 if item.get("path") not in visited]
+        unvisited.extend([item for item in all_level2 if item.get("path") not in visited])
+        
+        if not unvisited:
+            return "✅ You have explored all currently generated nodes for this topic!"
+
+        # Proactive suggestion logic
+        system = "You are a proactive research guide. Analyze the exploration history and suggest the most logical next steps."
+        recent_visited = list(visited)[-5:]
+        unvisited_list = "\n".join([f"- {i.get('path')}: {i.get('title')}" for i in unvisited[:15]])
+        
+        prompt = f"""The user is researching "{topic}".
+Recently explored: {', '.join(recent_visited)}
+
+Unvisited nodes available:
+{unvisited_list}
+
+Select the 3 most important nodes to visit next to ensure a comprehensive understanding. 
+For each, provide a one-sentence reason. 
+Format as a clean Markdown list."""
+        
+        recommendations = self.llm.generate(prompt, system=system, temperature=0.5)
+        
+        # Also log to persistent memory for history
+        self._generate_smart_recommendations(topic)
+        
+        return recommendations
+
     def _generate_smart_recommendations(self, topic: str):
         all_level1 = self.session.generated_level1.get(topic, [])
         all_level2 = []

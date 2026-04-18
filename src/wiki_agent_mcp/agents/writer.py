@@ -15,7 +15,7 @@ Subtopic: "{subtopic_number} {subtopic_title}"
 Length: 800-1200 words."""
         
         response = self.llm.generate(prompt, system=system, temperature=0.5)
-        self.session.generated_level3[cache_key] = response
+        self.session.save_level3(cache_key, response)
         
         # Store summary in persistent memory
         summary = self._summarize_article(response)

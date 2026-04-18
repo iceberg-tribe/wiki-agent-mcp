@@ -57,5 +57,14 @@ Tools for managing the user's progress and exploration history.
 - **Output:** A list of matching article paths.
 
 ### `get_level1`
-- **Description:** Quickly retrieves the Level 1 Table of Contents if it has already been generated in the current session.
+- **Description:** Quickly retrieves the Level 1 Table of Contents from cache if it has already been generated.
 - **Input:** `topic` (string)
+
+### `suggest_next_steps`
+- **Description:** Analyzes your exploration history and proactively suggests the 3 most logical sections to visit next.
+- **Input:** `topic` (string)
+- **Output:** Markdown list with reasoning.
+
+### `get_skill_guide`
+- **Description:** Retrieves the full `SKILL.md` operating manual for the Wiki Agent.
+- **Output:** Markdown content.

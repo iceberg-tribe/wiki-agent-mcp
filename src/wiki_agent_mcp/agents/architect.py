@@ -26,7 +26,7 @@ Format:
             for item in level1:
                 if "path" not in item:
                     item["path"] = f"{topic} > {item['number']}"
-            self.session.generated_level1[topic] = level1
+            self.session.save_level1(topic, level1)
             return level1
         
         # Fallback
@@ -38,5 +38,5 @@ Format:
             {"number": 5, "title": "Case Studies", "path": f"{topic} > 6"},
             {"number": 6, "title": "Future Trajectories", "path": f"{topic} > 7"},
         ]
-        self.session.generated_level1[topic] = fallback
+        self.session.save_level1(topic, fallback)
         return fallback

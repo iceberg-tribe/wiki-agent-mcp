@@ -1,11 +1,11 @@
-# 🧠 Wiki Agent MCP Server
+# 🧠 Wiki Agent: Premium Research Assistant
 
 [![MCP Protocol](https://img.shields.io/badge/MCP-Protocol-blue?style=for-the-badge)](https://modelcontextprotocol.io)
 [![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-green?style=for-the-badge)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **Progressive, multi-agent wiki generator using Model Context Protocol (MCP).**  
-> Generate detailed, hierarchical wikis on any topic on-demand using specialized LLM agents.
+> **The state-of-the-art "Premium Research Assistant" experience for the Model Context Protocol.**  
+> Transform raw curiosity into a structured, persistent knowledge base using a specialized multi-agent research lifecycle.
 
 [**🛠️ Tools Reference**](docs/tools.md) | [**🧠 Storage & Memory**](docs/storage.md) | [**🏗️ Architecture**](docs/architecture.md) | [**🧪 Testing Guide**](docs/testing.md)
 
@@ -21,11 +21,11 @@
   - **Level 1 (Outline Architect):** Conceptualizes the overall structure.
   - **Level 2 (Subtopic Expander):** Breaks down sections into granular subtopics.
   - **Level 3 (Article Writer):** Produces high-quality, comprehensive articles.
-- 📈 **Progressive Generation** – Content is generated on-demand, optimizing tokens and focus.
-- 🧠 **Session & Persistent Memory** – Tracks exploration history and stores summaries in SQLite.
-- 📊 **Exploration Reports** – Automated summaries with gap analysis and smart "next-read" suggestions.
-- 🔍 **Deep Search** – Full-text search across all generated articles.
-- 🔌 **Agnostic LLM Support** – Seamlessly works with OpenAI, Anthropic, or local Ollama instances.
+- 🔄 **Managed Research Lifecycle** – Enforces a professional workflow: Initiation → Exploration → Closure.
+- 💾 **Zero-Loss Persistence** – Disk-based caching ensures your research is never lost, even across restarts.
+- 🧠 **Smart Guidance** – Proactive next-step suggestions based on your exploration history and unanswered questions.
+- 📊 **Executive Dossiers** – Professional research reports with gap analysis and knowledge maps.
+- 🔍 **Universal Search** – Full-text search across your entire evolving knowledge base.
 
 ---
 
@@ -119,6 +119,9 @@ To use Wiki Agent within Claude Desktop, add the following to your configuration
     }
   }
 }
+
+> [!TIP]
+> **Premium Tip:** Once connected, you can use the `@wiki-session` prompt in Claude to start a structured research session with guided instructions and lifecycle management.
 ```
 
 > [!IMPORTANT]
