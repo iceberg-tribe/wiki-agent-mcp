@@ -1,6 +1,6 @@
 # 🛠️ MCP Tools Reference
 
-[**🏗️ Architecture**](architecture.md) | [**🧠 Storage & Memory**](storage.md)
+[**🏗️ Architecture**](architecture.md) | [**🧠 Storage**](storage.md) | [**🧪 Testing**](testing.md)
 
 ## 🤖 Generation Tools
 

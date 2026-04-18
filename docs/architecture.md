@@ -1,5 +1,7 @@
 # 🏗️ Architecture
 
+[**🛠️ Tools**](tools.md) | [**🧠 Storage**](storage.md) | [**🧪 Testing**](testing.md)
+
 Wiki Agent MCP follows a modular, domain-driven design to ensure maintainability and scalability. The project is split into several specialized layers.
 
 ## 📂 Project Structure

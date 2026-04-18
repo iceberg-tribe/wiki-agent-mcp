@@ -7,7 +7,7 @@
 > **Progressive, multi-agent wiki generator using Model Context Protocol (MCP).**  
 > Generate detailed, hierarchical wikis on any topic on-demand using specialized LLM agents.
 
-[**🛠️ Tools Reference**](docs/tools.md) | [**🧠 Storage & Memory**](docs/storage.md) | [**🏗️ Architecture**](docs/architecture.md) | [**🧪 Testing**](#-testing)
+[**🛠️ Tools Reference**](docs/tools.md) | [**🧠 Storage & Memory**](docs/storage.md) | [**🏗️ Architecture**](docs/architecture.md) | [**🧪 Testing Guide**](docs/testing.md)
 
 <p align="center">
   <img src="docs/images/logo.png" alt="Wiki Agent MCP Logo" width="400">
@@ -155,17 +155,16 @@ To use Wiki Agent within Claude Desktop, add the following to your configuration
 
 ## 🧪 Testing
 
-Run the test suite to ensure everything is working correctly:
+We provide a comprehensive testing suite and multiple ways to verify the server locally.
 
+For detailed instructions on using the MCP Inspector, manual JSON-RPC testing, and unit tests, see our:
+👉 [**Detailed Testing Guide**](docs/testing.md)
+
+### Quick Handshake Check
 ```powershell
-pytest tests/
+echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}' | uv run python -m wiki_agent_mcp.main
 ```
 
-You can also verify the MCP handshake manually:
-
-```powershell
-echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}' | python -m wiki_agent_mcp.main
-```
 
 ---
 

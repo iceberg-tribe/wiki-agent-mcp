@@ -1,6 +1,6 @@
 # 🧠 Storage & Memory Architecture
 
-[**🏗️ Architecture**](architecture.md) | [**🛠️ Tools Reference**](tools.md)
+[**🏗️ Architecture**](architecture.md) | [**🛠️ Tools**](tools.md) | [**🧪 Testing**](testing.md)
 
 ## ⚡ Session Memory (Volatile)
 
