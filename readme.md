@@ -1,11 +1,13 @@
 # 🧠 Wiki Agent MCP Server
 
 [![MCP Protocol](https://img.shields.io/badge/MCP-Protocol-blue?style=for-the-badge)](https://modelcontextprotocol.io)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green?style=for-the-badge)](https://www.python.org/)
+[![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-green?style=for-the-badge)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 > **Progressive, multi-agent wiki generator using Model Context Protocol (MCP).**  
 > Generate detailed, hierarchical wikis on any topic on-demand using specialized LLM agents.
+
+[**🛠️ Tools Reference**](docs/tools.md) | [**🧠 Storage & Memory**](docs/storage.md) | [**🧪 Testing**](#-testing)
 
 <p align="center">
   <img src="docs/images/logo.png" alt="Wiki Agent MCP Logo" width="400">
@@ -34,7 +36,7 @@
 First, clone the repository:
 
 ```powershell
-git clone https://github.com/yourusername/wiki-agent-mcp.git
+git clone https://github.com/iceberg-tribe/wiki-agent-mcp.git
 cd wiki-agent-mcp
 ```
 
@@ -183,7 +185,7 @@ Contributions are welcome! Please follow these steps:
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-MIT © [Dhruv](https://github.com/yourusername)
+MIT © [Iceberg Tribe](https://github.com/iceberg-tribe)
 
 ---
 

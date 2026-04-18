@@ -7,18 +7,16 @@ name = "wiki-agent-mcp"
 version = "1.0.0"
 description = "Multi-agent progressive wiki generator for MCP"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [
-    { name = "Your Name", email = "you@example.com" }
+    { name = "Iceberg Tribe", email = "[EMAIL_ADDRESS]" }
 ]
 keywords = ["mcp", "wiki", "llm", "agent", "claude", "openai"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
 
@@ -34,6 +32,6 @@ dependencies = [
 wiki-agent-mcp = "wiki_agent_mcp.server:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/wiki-agent-mcp"
-Repository = "https://github.com/yourusername/wiki-agent-mcp"
-Issues = "https://github.com/yourusername/wiki-agent-mcp/issues"
+Homepage = "https://github.com/iceberg-tribe/wiki-agent-mcp"
+Repository = "https://github.com/iceberg-tribe/wiki-agent-mcp"
+Issues = "https://github.com/iceberg-tribe/wiki-agent-mcp/issues"

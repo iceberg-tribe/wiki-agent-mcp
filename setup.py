@@ -17,5 +17,5 @@ setup(
             "wiki-agent-mcp=wiki_agent_mcp.server:main",
         ],
     },
-    python_requires=">=3.10",
+    python_requires=">=3.12",
 )
