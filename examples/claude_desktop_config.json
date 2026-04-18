@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "wiki-agent": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/ABSOLUTE/PATH/TO/wiki-agent-mcp",
+        "python",
+        "-m",
+        "wiki_agent_mcp.server"
+      ],
+      "env": {
+        "LLM_PROVIDER": "anthropic",
+        "ANTHROPIC_API_KEY": "YOUR_API_KEY_HERE",
+        "LLM_MODEL": "claude-3-sonnet-20240229",
+        "WIKI_DATA_DIR": "/ABSOLUTE/PATH/TO/wiki_data"
+      }
+    }
+  }
+}
