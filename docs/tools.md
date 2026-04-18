@@ -1,6 +1,6 @@
 # 🛠️ MCP Tools Reference
 
-Wiki Agent MCP provides a suite of tools for progressive wiki generation, session tracking, and intelligent reporting.
+[**🏗️ Architecture**](architecture.md) | [**🧠 Storage & Memory**](storage.md)
 
 ## 🤖 Generation Tools
 

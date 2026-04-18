@@ -7,7 +7,7 @@
 > **Progressive, multi-agent wiki generator using Model Context Protocol (MCP).**  
 > Generate detailed, hierarchical wikis on any topic on-demand using specialized LLM agents.
 
-[**🛠️ Tools Reference**](docs/tools.md) | [**🧠 Storage & Memory**](docs/storage.md) | [**🧪 Testing**](#-testing)
+[**🛠️ Tools Reference**](docs/tools.md) | [**🧠 Storage & Memory**](docs/storage.md) | [**🏗️ Architecture**](docs/architecture.md) | [**🧪 Testing**](#-testing)
 
 <p align="center">
   <img src="docs/images/logo.png" alt="Wiki Agent MCP Logo" width="400">
@@ -82,14 +82,14 @@ Start the MCP server using either `uv` or `python`:
 #### Using `uv` (No activation required)
 
 ```powershell
-uv run python -m wiki_agent_mcp.server
+uv run python -m wiki_agent_mcp.main
 ```
 
 #### Using standard Python (Requires venv activation)
 
 ```powershell
 # Ensure your venv is activated first
-python -m wiki_agent_mcp.server
+python -m wiki_agent_mcp.main
 ```
 
 ---
@@ -108,7 +108,7 @@ To use Wiki Agent within Claude Desktop, add the following to your configuration
       "args": [
         "run",
         "--directory", "D:/dev-projects/wiki-mcp",
-        "python", "-m", "wiki_agent_mcp.server"
+        "python", "-m", "wiki_agent_mcp.main"
       ],
       "env": {
         "LLM_PROVIDER": "anthropic",
@@ -164,7 +164,7 @@ pytest tests/
 You can also verify the MCP handshake manually:
 
 ```powershell
-echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}' | python -m wiki_agent_mcp.server
+echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}' | python -m wiki_agent_mcp.main
 ```
 
 ---

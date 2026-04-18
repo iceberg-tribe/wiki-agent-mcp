@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [
-    { name = "Iceberg Tribe", email = "[EMAIL_ADDRESS]" }
+    { name = "Iceberg Tribe", email = "contact@icebergtribe.com" }
 ]
 keywords = ["mcp", "wiki", "llm", "agent", "claude", "openai"]
 classifiers = [
@@ -29,7 +29,7 @@ dependencies = [
 ]
 
 [project.scripts]
-wiki-agent-mcp = "wiki_agent_mcp.server:main"
+wiki-agent-mcp = "wiki_agent_mcp.main:main"
 
 [project.urls]
 Homepage = "https://github.com/iceberg-tribe/wiki-agent-mcp"

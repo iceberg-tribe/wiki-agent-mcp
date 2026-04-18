@@ -1,6 +1,6 @@
 # 🧠 Storage & Memory Architecture
 
-Wiki Agent MCP utilizes a dual-layer memory system to provide both high-speed interactive performance and long-term persistence.
+[**🏗️ Architecture**](architecture.md) | [**🛠️ Tools Reference**](tools.md)
 
 ## ⚡ Session Memory (Volatile)
 

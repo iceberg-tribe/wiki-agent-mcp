@@ -14,7 +14,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "wiki-agent-mcp=wiki_agent_mcp.server:main",
+            "wiki-agent-mcp=wiki_agent_mcp.main:main",
         ],
     },
     python_requires=">=3.12",
